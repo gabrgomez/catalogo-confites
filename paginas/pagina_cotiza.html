@@ -11,7 +11,8 @@
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
-        <a class="navbar-brand" href="#"><img id="logo" src="img/candy-500x500.png" ></a>
+      <a class="navbar-brand" href="#"><img id="logo" src="/catalogo-confites-master/img/Logotipo-chico.png" ></a>
+        
         <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,54 +28,79 @@
                     <a class="nav-link" href="paginas/pagina_dulces.html">Dulces</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pagina_contacto.html">Contactanos</a>
+                    <a class="nav-link" href="paginas/pagina_contacto.html">Contactanos</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+   
 
+    <form method="POST" id="formulario" action="#">
+        <table border="0">
+            <tr>
+              <td><label>nombre</label></td>
+              <td><input type="text" name="txtNombre" value=""  id="id_txtContrasena" placeholder="ingresa tu nombre" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="id_txtEmail">Email</label></td>
+                <td><input type="email" name="txtEmail" value="" id="id_txtEmail" placeholder="Ingresa su Email aquí" />
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label>Mensaje</label></td>
+                <td><input type="text" name="txtMensaje" id="id_txtMensaje" placeholder="ingresa tu mensaje" />
+                </td>
+                </tr>
+                <td><input type="submit" value="Enviar" name="btnGuardar" />
+                </td>
+            </tbody>
+        </table><br>
+    
+    </form>
 
     <!-- footer -->
 
     <footer class="bg-custom text-white py-4">
-        <h3>contactanos</h3>
-        </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <h5 class="box">Información de contacto</h5>
+                  <p><i class="fas fa-map-marker-alt"></i> 123 Calle Principal, Ciudad</p>
+                  <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                  <p><i class="fas fa-envelope"></i> info@sweetandsalty.com</p>
+              </div>
+              <div class="col-md-4">
+                  <h5 class="box">Enlaces útiles</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Inicio</a></li>
+                      <li><a href="#">Dulces</a></li>
+                      <li><a href="#">Salados</a></li>
+                      <li><a href="#">Contactanos</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                <h5 class="box">Síguenos</h5>
+                <div class="redes">
+                    <ul>
+                        <li><a title="facebook" href="http://facebook.com"><img src="/catalogo-confites-master/img/icons/icons/icons8-facebook.svg"  alt="facebook" /></a>
+                        </li>
+                        <li><a title= "google+" href="http://google.com"><img src="/catalogo-confites-master/img/icons/icons/icons8-logo-de-google.svg" alt="google+" /></a>
+                        </li>
+                        <li><a title= "instagram" href="http://instagram.com"><img src="/catalogo-confites-master/img/icons/icons/icons8-instagram.svg" alt="instagram" /></a>
+                        </li>
+                        <li><a title="mail" href="http://gmail.com"><img src="/catalogo-confites-master/img/icons/icons/icons8-gmail.svg" alt="mail" /></a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
       </div>
-      <div class="col-md-7 col-sm-offset-0 col-sm-6 col-xs-offset-1 col-xs-10">
-        <div class="contact-form">
-          <form role="form">
-            <div class="col-md-6">
-              <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
-            </div>
-            <div class="col-md-6">
-              <input type="email" class="form-control" id="correo" placeholder="correo">
-            </div>
-            <div class="col-md-12">
-              <textarea class="form-control" placeholder="Mensaje" rows="6"></textarea>
-            </div>
-            <div class="col-md-12 text-center">
-              <button type="submit" class="contact-button">Mensaje</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-10">
-        <div class="address">
-          <h4>Address</h4>
-          <p>123, This Appartment,<br>
-            Near Ocean Street<br>
-            New York<br>
-          <div class="email"><i class="fa fa-at"></i>hello@w3template.com<br>
-            <i class="fa fa-mobile"></i>123 456 789</div>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<footer>
-    <script src="js/script.js"></script>
+  </footer>
+
+    <script src="/catalogo-confites-master/js/validador.js"></script>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
