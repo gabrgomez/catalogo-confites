@@ -36,29 +36,18 @@
 
     <!-- formulario -->
 
-    <form method="POST" id="formulario" action="#">
-        <table border="0">
-            <tr>
-            <td><label>nombre</label></td>
-            <td><input type="text" name="txtNombre" value=""  id="id_txtContrasena" placeholder="ingresa tu nombre" />
-            </td>
-            </tr>
-            <tr>
-            <td><label for="id_txtEmail">Email</label></td>
-                <td><input type="email" name="txtEmail" value="" id="id_txtEmail" placeholder="Ingresa su Email aquí" />
-                </td>
-                
-            </tr>
-            <tr>
-                <td><label>Mensaje</label></td>
-                <td><input type="text" name="txtMensaje" id="id_txtMensaje" placeholder="ingresa tu mensaje" />
-                </td>
-                </tr>
-                <td><input type="submit" value="Enviar" name="btnGuardar" />
-                </td>
-            </tbody>
-        </table><br>
-    
+    <h1>Formulario de Contacto</h1>
+    <form id="formulario" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="Ingrese correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Ingrese mensaje" required></textarea>
+
+      <button type="submit" id="boton">Enviar</button>
     </form>
 
     <!-- footer -->
