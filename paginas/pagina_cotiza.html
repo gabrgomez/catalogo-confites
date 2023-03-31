@@ -5,19 +5,13 @@
     <title>Sweet & Salty</title>
     <!-- Agregar las hojas de estilo de Bootstrap y CSS personalizado -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/catalogo-confites-master/css/estilo4.css">
+    <link rel="stylesheet" href="../css/estilo4.css">
     <link rel="stylesheet" href="css/flexboxgrid.css" type="text/css">
-    
-     <!-- JQuery -->
-     
-     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
-    <a class="navbar-brand" href="#"><img id="logo" src="/catalogo-confites-master/img/Logotipo-chico.png" alt="logo" ></a>
+    <a class="navbar-brand" href="#"><img id="logo" src="../img/Logotipo-chico.png" ></a>
         
         <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,18 +36,30 @@
 
     <!-- formulario -->
 
-   <form id="formulario" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" class="form-control required" placeholder="Ingrese nombre...">
-  
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" class="form-control required" placeholder="Ingrese correo...">
-  
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" class="form-control required" placeholder="Ingrese nombre..."></textarea>
-  
-        <button type="submit" >Enviar</button>
-      </form>
+    <form method="POST" id="formulario" action="#">
+        <table border="0">
+            <tr>
+            <td><label>nombre</label></td>
+            <td><input type="text" name="txtNombre" value=""  id="id_txtContrasena" placeholder="ingresa tu nombre" />
+            </td>
+            </tr>
+            <tr>
+            <td><label for="id_txtEmail">Email</label></td>
+                <td><input type="email" name="txtEmail" value="" id="id_txtEmail" placeholder="Ingresa su Email aquí" />
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label>Mensaje</label></td>
+                <td><input type="text" name="txtMensaje" id="id_txtMensaje" placeholder="ingresa tu mensaje" />
+                </td>
+                </tr>
+                <td><input type="submit" value="Enviar" name="btnGuardar" />
+                </td>
+            </tbody>
+        </table><br>
+    
+    </form>
 
     <!-- footer -->
 
@@ -79,19 +85,18 @@
                 <h5 class="box">Síguenos</h5>
                 <div class="redes">
                     <ul>
-                        <li><a title="facebook" href="http://facebook.com"><img src="/catalogo-confites-master/img/icons/icons8-facebook.svg"  alt="facebook" ></a>
+                        <li><a title="facebook" href="http://facebook.com"><img src="../img/icons/icons8-facebook.svg"  alt="facebook" ></a>
                         </li>
-                        <li><a title= "google+" href="http://google.com"><img src="/catalogo-confites-master/img/icons/icons8-logo-de-google.svg" alt="google+" ></a>
+                        <li><a title= "google+" href="http://google.com"><img src="../img/icons/icons8-gmail.svg" alt="google+" ></a>
                         </li>
-                        <li><a title= "instagram" href="http://instagram.com"><img src="/catalogo-confites-master/img/icons/icons8-instagram.svg" alt="instagram" ></a>
+                        <li><a title= "instagram" href="http://instagram.com"><img src="../img/icons/icons8-instagram.svg" alt="instagram" ></a>
                         </li>
-                        <li><a title="mail" href="http://gmail.com"><img src="/catalogo-confites-master/img/icons/icons8-gmail.svg" alt="mail" ></a>
+                        <li><a title="mail" href="http://gmail.com"><img src="../img/icons/icons8-logo-de-google.svg" alt="mail" ></a>
                         </li>
                     </ul>
                 </div>
         </div>
     </div>
-    </div>   
 </footer>
 
     <script src="/catalogo-confites-master/js/validador.js"></script>
