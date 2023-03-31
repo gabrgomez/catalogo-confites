@@ -46,7 +46,7 @@ footer {
   
   /* Estilos para el fondo */
   footer.bg-custom {
-    background-color: #4fc524;
+    background-color: #009E46;
   }
 
   header {
@@ -101,7 +101,7 @@ height: 500px;
 }
 
 .navbar-custom {
-    background-color: #ff5500;
+    background-color: #FF56A0;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -127,3 +127,4 @@ height: 500px;
 .carousel img { border-right: 180px solid #FFFFFF; }
 
 .carousel img { border-left: 180px solid #FFFFFF; }
+
