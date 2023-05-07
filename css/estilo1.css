@@ -17,7 +17,7 @@ footer {
   
   /* Estilos para el contenedor principal */
   footer .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
   }
   
@@ -83,6 +83,7 @@ nav a {
 
 .carousel-inner{
 height: 500px;
+/* width: 100%; */
 }
 
 
@@ -124,7 +125,16 @@ height: 500px;
   height: 50px;
   display: inline-block;
 }
-.carousel img { border-right: 180px solid #FFFFFF; }
 
-.carousel img { border-left: 180px solid #FFFFFF; }
+.carousel-inner {
+  border-right: 180px solid #FFFFFF; 
 
+  border-left: 180px solid #FFFFFF; 
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-inner {
+    border-left: 0px;
+    border-right: 0px;
+  }
+}
