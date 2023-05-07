@@ -20,7 +20,7 @@ $("#login-form").validate({
     },
     password: {
       required: "Por favor, introduzca su contraseña",
-      minlength: "La contraseña debe tener al menos 8 caracteres"
+      minlength: "La contraseña debe tener al menos 5 caracteres"
     }
   },
   //fin de los mensajes
