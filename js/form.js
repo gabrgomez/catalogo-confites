@@ -34,6 +34,8 @@ $("#login-form").validate({
 //fin del validate
 $("#btnInicioSesion").click(function (event) {
 
+  
+  
 
   //   esto es para que no direccione
     event.preventDefault();
