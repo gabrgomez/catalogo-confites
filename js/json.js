@@ -33,6 +33,7 @@ console.log(dog);
                 $('#info')
                 .append(perro + "<br>")
                 
+        
                 //.append($precio)                    
 
 
