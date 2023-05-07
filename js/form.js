@@ -9,7 +9,7 @@ $("#login-form").validate({
     },
     password: {
       required: true,
-      minlength: 8
+      minlength: 5
     }
   },
   //fin de las reglas
