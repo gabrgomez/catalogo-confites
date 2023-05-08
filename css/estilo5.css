@@ -41,7 +41,11 @@ form label,
    
   }
 
-  #btnInicioSesion{
+  #btnRegistro{
     color: #fff;
     background: #170075;
+  }
+/*h1*/
+  h1{
+    text-align: center;
   }
