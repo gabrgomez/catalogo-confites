@@ -3,6 +3,9 @@ $(document).ready(function() {
 
 $("#login-form").validate({
   rules: {
+    firstname: "required",
+      lastname1: "required",
+      lastname2: "required",
     email: {
       required: true,
       email: true
@@ -14,6 +17,9 @@ $("#login-form").validate({
   },
   //fin de las reglas
   messages: {
+    firstname: "Por favor, introduzca su nombre",
+      lastname1: "Por favor, introduzca su primer apellido",
+      lastname2: "Por favor, introduzca su segundo apellido",
     email: {
       required: "Por favor, introduzca su dirección de correo electrónico",
       email: "Por favor, introduzca una dirección de correo electrónico válida"
@@ -32,7 +38,7 @@ $("#login-form").validate({
 
 })
 //fin del validate
-$("#btnInicioSesion").click(function (event) {
+$("#btnRegistro").click(function (event) {
 
   
   
@@ -41,7 +47,7 @@ $("#btnInicioSesion").click(function (event) {
     event.preventDefault();
     
     if ($("#login-form").valid()) {
-      alert("Inició sesion! =D");
+      alert("¡registrado con exito! =D");
 
 
 }
